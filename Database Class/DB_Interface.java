@@ -298,6 +298,61 @@ public class DB_Interface extends SQLiteOpenHelper {
 	
 		return false;
 	}
+	
+	/*
+	 * Module Name: UpdateRow
+	 * 
+	 * Description:
+	 * Update a single row on any table with integer columns.
+	 * 
+	 * Note: Needs Work!!!!!!!!!
+	 * 
+	 * Date Created: 3/21/14
+	 * Author: Eloin Porras
+	 */
 
+	public Boolean updateRowInterger(String table, String column, String id, int value)
+	{
+		long result = 0;
+		SQLiteDatabase db = this.getReadableDatabase();
+		
+		ContentValues values = new ContentValues();
+		
+		values.put(column, value);
+		
+		result = db.update(table, values, Users_Name + " = ?", new String[] { id });
+		
+		if(result != -1)
+			return true;
+		
+		return false;
+	}
+	
+	/*
+	 * Module Name: deleteAllRows
+	 * 
+	 * Description:
+	 * Delete all rows from a single table
+	 * 
+	 * Note: Extreme Caution before use!
+	 * 
+	 * Date Created: 3/21/14
+	 * Author: Eloin Porras
+	 * 
+	 */
+	
+	public void deleteAllRows(String table)
+	{
+		SQLiteDatabase db = this.getWritableDatabase();
+	    db.delete(table, null, null);
+	    db.close();
+	}
+	
+	public int findID()
+	{
+		int result = 0;
+		
+		return result;
+	}
 
 }
