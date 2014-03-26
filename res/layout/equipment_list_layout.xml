@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+	    <TextView
+	        android:id="@+id/textView1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Check off all of the equipment you own/have available to you:" />
+	
+	    <CheckBox
+	        android:id="@+id/barbell"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Plate loaded barbell(s)" />
+	
+	    <CheckBox
+	        android:id="@+id/heavyDumbbells"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Dumbbells 50 lbs and heavier" />
+	
+	    <CheckBox
+	        android:id="@+id/lightDumbbells"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Dumbbells up to 50 lbs" />
+	
+	    <CheckBox
+	        android:id="@+id/EZcurlBar"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="EZ curl bar" />
+	
+	    <CheckBox
+	        android:id="@+id/pullUpBar"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Pull-up bar" />
+	
+	    <CheckBox
+	        android:id="@+id/dipStation"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Dip station" />
+	
+	    <CheckBox
+	        android:id="@+id/benchPress"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Bench press station with uprights" />
+	
+	    <CheckBox
+	        android:id="@+id/flatBench"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Flat bench" />
+	
+	    <CheckBox
+	        android:id="@+id/inclineBench"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Incline/adjustable bench" />
+	
+	    <CheckBox
+	        android:id="@+id/squatRack"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Squat rack (NOT for curling broh!)" />
+	
+	    <CheckBox
+	        android:id="@+id/bumperPlates"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Bumper plates (if you don&apos;t know what they are, you don&apos;t have them)" />
+	
+	    <CheckBox
+	        android:id="@+id/plyoBoxes"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Boxes to jump onto" />
+	
+	    <CheckBox
+	        android:id="@+id/medBalls"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Medicine ball(s) between 8 and 25 lbs" />
+	
+	    <CheckBox
+	        android:id="@+id/trx"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="TRX or adjustable still rings" />
+	
+	    <CheckBox
+	        android:id="@+id/pecDeck"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Pec Deck machine" />
+	
+	    <CheckBox
+	        android:id="@+id/seatedCalfRaise"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Seated calf raise machine" />
+	
+	    <CheckBox
+	        android:id="@+id/cableCrossover"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Cable crossover machine" />
+	
+	    <CheckBox
+	        android:id="@+id/latPullDown"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Lat pulldown machine" />
+	
+	    <Button
+	        android:id="@+id/button1"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.16"
+	        android:text="Next"
+	        android:onClick="submitEquipment" />
+	
+	</LinearLayout>
+</ScrollView>
